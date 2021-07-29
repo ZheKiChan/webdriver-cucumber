@@ -1,0 +1,42 @@
+{
+    "name": "webdriver-cucumber",
+    "version": "1.0.0",
+    "description": "Webdriverio with cucumber",
+    "main": "index.js",
+    "scripts": {
+        "pretest": "node ./test/utils/clear_reports.js && node ./test/utils/delete_logs.js",
+        "test": "npx wdio run test/config/wdio.conf.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZheKiChan/webdriver-cucumber.git"
+    },
+    "keywords": [
+        "BDD"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ZheKiChan/webdriver-cucumber/issues"
+    },
+    "homepage": "https://github.com/ZheKiChan/webdriver-cucumber#readme",
+    "dependencies": {
+        "@wdio/cli": "^7.9.0",
+        "chai": "^4.3.4",
+        "cucumber": "^7.0.0-rc.0",
+        "cucumber-html-reporter": "^5.4.0",
+        "fs-extra": "^10.0.0",
+        "winston": "^3.3.3",
+        "winston-daily-rotate-file": "^4.5.5",
+        "yargs": "^17.0.1"
+    },
+    "devDependencies": {
+        "@wdio/cucumber-framework": "^7.9.0",
+        "@wdio/local-runner": "^7.9.0",
+        "@wdio/spec-reporter": "^7.9.0",
+        "chromedriver": "^92.0.0",
+        "wdio-chromedriver-service": "^7.2.0",
+        "wdio-cucumberjs-json-reporter": "^4.0.0",
+        "wdio-json-reporter": "^2.0.0"
+    }
+}
